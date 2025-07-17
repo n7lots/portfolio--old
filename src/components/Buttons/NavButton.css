@@ -1,0 +1,17 @@
+.nav-button {
+  font-size: 1.8rem;
+  font-family: "Poppins";
+  color: white;
+  margin-left: 8rem;
+  background: none;
+  font-weight: 500;
+  transition: 0.3 color border ease;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+}
+
+.nav-button:hover,
+.nav-button.active {
+  color: #9005d5;
+  border-bottom: 3px solid #9005d5;
+}

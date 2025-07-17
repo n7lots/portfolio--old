@@ -1,0 +1,39 @@
+section {
+  min-height: 100vh;
+}
+
+.skill-content {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  opacity: 0;
+  transform: translateY(0);
+  animation: fadeInDown 0.8s forwards;
+}
+
+@keyframes fadeInDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.skill-button-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 60rem;
+  height: 10rem;
+}
+
+.hardskills,
+.softskills {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+

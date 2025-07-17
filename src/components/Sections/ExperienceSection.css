@@ -1,0 +1,21 @@
+section {
+  height: 100vh;
+}
+
+.experience {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(0);
+  animation: fadeInDown 0.8s forwards;
+  
+}
+
+@keyframes fadeInDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

@@ -1,0 +1,120 @@
+header {
+  margin-top: 1rem;
+  width: 100%;
+  position: fixed;
+  height: var(--header-size);
+  left: 0;
+  top: 0;
+  padding: 1rem 8%;
+  filter: drop-shadow(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  z-index: 100;
+}
+
+.button {
+  width: 15rem;
+  height: 4.5rem;
+  border: 2px solid #9005d5;
+  border-radius: 3rem;
+  color: white;
+  background: black;
+  font-family: "Poppins";
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.button:hover {
+  box-shadow: 0 0 25px rgba(144, 5, 213, 1);
+}
+
+.button.active {
+  background: white;
+  color: black;
+}
+
+nav button {
+  font-size: 1.8rem;
+  font-family: "Poppins";
+  color: white;
+  margin-left: 8rem;
+  background: none;
+  font-weight: 500;
+  transition: 0.3 color border ease;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+}
+
+nav button:hover,
+nav button.active {
+  color: #9005d5;
+  border-bottom: 3px solid #9005d5;
+}
+
+@media (max-width: 1024px) {
+  nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    border-left: 3px solid #9005d5;
+    border-bottom: 3px solid #9005d5;
+    border-bottom-left-radius: 2rem;
+    border-top: 3px solid #9005d5;
+    padding: 1rem solid;
+    background: #161616;
+  }
+
+  nav.active {
+    display: block;
+  }
+
+  nav button {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 1rem;
+  }
+
+  nav button:hover,
+  nav button.active {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  header {
+    flex-direction: row-reverse;
+  }
+
+  nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    border-left: 3px solid #9005d5;
+    border-bottom: 3px solid #9005d5;
+    border-bottom-left-radius: 2rem;
+    border-top: 3px solid #9005d5;
+    padding: 1rem solid;
+    background: #161616;
+  }
+
+  nav.active {
+    display: block;
+  }
+
+  nav button {
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 1rem;
+  }
+
+  nav button:hover,
+  nav button.active {
+    padding: 1rem;
+  }
+}
